@@ -7,7 +7,6 @@ importers:
       '@antfu/eslint-config': ^0.20.2
       '@babel/types': ^7.17.0
       '@types/node': ^17.0.23
-      '@vue/composition-api': ^1.4.9
       '@vue/test-utils': ^2.0.0-rc.18
       bumpp: ^7.1.1
       eslint: ^8.13.0
@@ -27,7 +26,6 @@ importers:
       '@antfu/eslint-config': 0.20.2_eslint@8.13.0+typescript@4.6.3
       '@babel/types': 7.17.0
       '@types/node': 17.0.23
-      '@vue/composition-api': 1.4.9_vue@3.2.33
       '@vue/test-utils': 2.0.0-rc.18_vue@3.2.33
       bumpp: 7.1.1
       eslint: 8.13.0
@@ -612,14 +610,6 @@ packages:
       '@vue/compiler-dom': 3.2.33
       '@vue/shared': 3.2.33
     dev: false
-
-  /@vue/composition-api/1.4.9_vue@3.2.33:
-    resolution: {integrity: sha512-l6YOeg5LEXmfPqyxAnBaCv1FMRw0OGKJ4m6nOWRm6ngt5TuHcj5ZoBRN+LXh3J0u6Ur3C4VA+RiKT+M0eItr/g==}
-    peerDependencies:
-      vue: '>= 2.5 < 3'
-    dependencies:
-      vue: 3.2.33
-    dev: true
 
   /@vue/reactivity-transform/3.2.33:
     resolution: {integrity: sha512-4UL5KOIvSQb254aqenW4q34qMXbfZcmEsV/yVidLUgvwYQQ/D21bGX3DlgPUGI3c4C+iOnNmDCkIxkILoX/Pyw==}
