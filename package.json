@@ -1,18 +1,18 @@
 {
-  "name": "name",
-  "version": "0.0.3",
+  "name": "use-date",
+  "version": "0.0.4",
   "packageManager": "pnpm@6.32.3",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/murongg/[name]#readme",
+  "homepage": "https://github.com/murongg/use-date#readme",
   "bugs": {
-    "url": "https://github.com/murongg/[name]/issues"
+    "url": "https://github.com/murongg/use-date/issues"
   },
   "license": "MIT",
   "author": "MuRong <admin@imuboy.cn>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/murongg/[name].git"
+    "url": "git+https://github.com/murongg/use-date.git"
   },
   "funding": "https://github.com/sponsors/murongg",
   "main": "./dist/index.cjs",
