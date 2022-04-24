@@ -1,6 +1,6 @@
-import { REGEX_FORMAT, REGEX_PARSE } from "./constant"
-import { DateLike, Fn } from "./shared"
 import { onUnmounted } from 'vue'
+import { REGEX_FORMAT, REGEX_PARSE } from './constant'
+import type { DateLike, Fn } from './shared'
 export function normalizeDate(date: DateLike) {
   if (date === null)
     return new Date(NaN) // null is invalid
@@ -51,19 +51,18 @@ export const formatDate = (date: Date, formatStr: string) => {
   return formatStr.replace(REGEX_FORMAT, (match, $1) => $1 || matches[match])
 }
 
-
 export const isArray = (val: any) => Array.isArray(val)
 export const isDate = (val: any) => val instanceof Date
 
-export function interval(cb: Fn, interval: number = 1000) {
-  let timer = setInterval(cb, interval)
+export function interval(cb: Fn, interval = 1000) {
+  const timer = setInterval(cb, interval)
   onUnmounted(() => {
     clearInterval(timer)
   })
 }
 
 export function requestAnimationFrame(cb: Fn) {
-  let rafId = window.requestAnimationFrame(cb)
+  const rafId = window.requestAnimationFrame(cb)
   onUnmounted(() => {
     window.cancelAnimationFrame(rafId)
   })

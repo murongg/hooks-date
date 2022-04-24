@@ -13,4 +13,4 @@ export type DateLike = Date | number | string | undefined
 /**
  * Any function
  */
- export type Fn = () => void
+export type Fn = () => void

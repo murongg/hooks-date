@@ -1,5 +1,5 @@
-import { useDateFormat } from '.'
 import { describe, expect, it } from 'vitest'
+import { useDateFormat } from '.'
 describe('useDateFormat', () => {
   it('should work with default', () => {
     expect(useDateFormat(new Date('2022-01-01 10:24:00')).value).toBe('2022-01-01 10:24:00')
