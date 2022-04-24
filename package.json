@@ -1,18 +1,18 @@
 {
-  "name": "hook-date",
-  "version": "0.0.6",
+  "name": "hooks-date",
+  "version": "0.0.7",
   "packageManager": "pnpm@6.32.3",
   "description": "",
   "keywords": [],
-  "homepage": "https://github.com/murongg/hook-date#readme",
+  "homepage": "https://github.com/murongg/hooks-date#readme",
   "bugs": {
-    "url": "https://github.com/murongg/hook-date/issues"
+    "url": "https://github.com/murongg/hooks-date/issues"
   },
   "license": "MIT",
   "author": "MuRong <admin@imuboy.cn>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/murongg/hook-date.git"
+    "url": "git+https://github.com/murongg/hooks-date.git"
   },
   "funding": "https://github.com/sponsors/murongg",
   "main": "./dist/index.cjs",
