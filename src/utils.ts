@@ -1,6 +1,6 @@
-import { onUnmounted } from 'vue'
+import { computed, onUnmounted, Ref } from 'vue'
 import { REGEX_FORMAT, REGEX_PARSE } from './constant'
-import type { DateLike, Fn } from './shared'
+import type { DateLike, DayInfo, Fn } from './shared'
 export function normalizeDate(date: DateLike) {
   if (date === null)
     return new Date(NaN) // null is invalid
@@ -66,4 +66,25 @@ export function requestAnimationFrame(cb: Fn) {
   onUnmounted(() => {
     window.cancelAnimationFrame(rafId)
   })
+}
+
+export function getDateInfo(date: Ref<Date>): DayInfo {
+  const year = computed(() => date.value.getFullYear())
+  const month = computed(() => date.value.getMonth() + 1)
+  const day = computed(() => date.value.getDate())
+  const hours = computed(() => date.value.getHours())
+  const minutes = computed(() => date.value.getMinutes())
+  const seconds = computed(() => date.value.getSeconds())
+  const milliseconds = computed(() => date.value.getMilliseconds())
+  const week = computed(() => date.value.getDay())
+  return {
+    year,
+    month,
+    day,
+    hours,
+    minutes,
+    milliseconds,
+    seconds,
+    week
+  }
 }

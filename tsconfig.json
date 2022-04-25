@@ -4,11 +4,23 @@
     "module": "esnext",
     "lib": ["esnext", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "./types",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
-  }
+  },
+  "include": [
+    "src",
+    "vitest.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/**/*.md",
+    "**/dist",
+    "src/.vitepress",
+  ]
 }
