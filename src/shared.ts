@@ -3,12 +3,12 @@ import type { ComputedRef, Ref } from 'vue'
 /**
  * Maybe it's a ref, or not.
  */
-export type MaybeRef<T> = Ref<T>
+export type MaybeRef<T> = Ref<T> | T
 
 /**
  * Maybe it's a computed ref, or not.
  */
-export type MaybeComputedRef<T> = ComputedRef<T>
+export type MaybeComputedRef<T> = ComputedRef<T> | T
 
 /**
  * date type
@@ -25,12 +25,12 @@ export type Fn = () => void
  * years month day hours minutes milliseconds seconds week
  */
 export interface DayInfo {
-  year: MaybeComputedRef<number>
-  month: MaybeComputedRef<number>
-  day: MaybeComputedRef<number>
-  hours: MaybeComputedRef<number>
-  minutes: MaybeComputedRef<number>
-  milliseconds: MaybeComputedRef<number>
-  seconds: MaybeComputedRef<number>
-  week: MaybeComputedRef<number>
+  year: ComputedRef<number>
+  month: ComputedRef<number>
+  day: ComputedRef<number>
+  hours: ComputedRef<number>
+  minutes: ComputedRef<number>
+  milliseconds: ComputedRef<number>
+  seconds: ComputedRef<number>
+  week: ComputedRef<number>
 }

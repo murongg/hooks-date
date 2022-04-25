@@ -5,7 +5,7 @@ describe('useDateFormat', () => {
     expect(useDateFormat(new Date('2022-01-01 10:24:00')).value).toBe('2022-01-01 10:24:00')
   })
   it('should work with time string ', () => {
-    expect(useDateFormat('2022-01-01 20:24:24', 'YYYY—MM-DD HH:mm:ss').value).toBe('2022—01-01 20:24:24')
+    expect(useDateFormat(new Date('2022-01-01 20:24:24'), 'YYYY—MM-DD HH:mm:ss').value).toBe('2022—01-01 20:24:24')
   })
   it('should work with YYYY-MM-DD', () => {
     expect(useDateFormat(new Date('2022-01-01 10:24:00'), 'YYYY-MM-DD').value).toBe('2022-01-01')
