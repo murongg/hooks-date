@@ -3,7 +3,6 @@ import type { Plugin } from 'vite'
 import fs from 'fs-extra'
 import { getFunctionNames } from '../utils'
 
-
 export function MarkdownTransform(): Plugin {
   const DIR_TYPES = resolve(__dirname, '../../../types/packages')
   const hasTypes = fs.existsSync(DIR_TYPES)
@@ -39,7 +38,7 @@ const GITHUB_BLOB_URL = 'https://github.com/murongg/hooks-date/tree/main'
 export async function getFunctionMarkdown(pkg: string, name: string) {
   const URL = `${GITHUB_BLOB_URL}/${pkg}/${name}`
   const hasDemo = fs.existsSync(join(DIR_SRC, name, 'demo.vue'))
-  let typingSection = ''
+  const typingSection = ''
   const links = ([
     ['Source', `${URL}/index.ts`],
     hasDemo ? ['Demo', `${URL}/demo.vue`] : undefined,
@@ -67,13 +66,12 @@ import Demo from './demo.vue'
 `
   }
 
-
   const footer = `${typingSection}\n\n${sourceSection}\n`
   const header = demoConttainer
 
   return {
     footer,
     header,
-    setupContainer
+    setupContainer,
   }
 }

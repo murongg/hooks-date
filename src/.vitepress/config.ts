@@ -3,20 +3,19 @@ import base from '@vue/theme/config'
 import highlight from './plugins/highlight'
 import { getFunctionNames } from './utils'
 
-const themeConfig = async () => {
+const themeConfig = async() => {
   const config = await base()
   config.markdown.highlight = await highlight()
   return config
 }
-
 
 const FunctionsSideBar = getFunctionsSideBar()
 const sidebar = {
   '/functions': FunctionsSideBar,
 }
 
-getFunctionNames().map(func => {
-  sidebar[`/${func}`]= FunctionsSideBar
+getFunctionNames().forEach((func) => {
+  sidebar[`/${func}`] = FunctionsSideBar
 })
 /**
  * @type {import('vitepress').UserConfig}
@@ -71,8 +70,8 @@ function getFunctionsSideBar() {
     })
   }
   return [{
-    text: "Functions",
-    items: links
+    text: 'Functions',
+    items: links,
   }]
 }
 

@@ -3,7 +3,7 @@ import type { ComputedRef, Ref } from 'vue'
 /**
  * Maybe it's a ref, or not.
  */
-export type MaybeRef<T> = Ref<T> 
+export type MaybeRef<T> = Ref<T>
 
 /**
  * Maybe it's a computed ref, or not.

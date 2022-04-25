@@ -1,6 +1,6 @@
 import type { Ref } from 'vue'
 import { ref } from 'vue'
-import { DayInfo } from '../shared'
+import type { DayInfo } from '../shared'
 import { getDateInfo, interval as intervalFn, requestAnimationFrame } from '../utils'
 
 export interface UseNowOptions<IsExtend extends boolean> {

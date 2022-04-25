@@ -1,4 +1,5 @@
-import { computed, onUnmounted, Ref } from 'vue'
+import type { Ref } from 'vue'
+import { computed, onUnmounted } from 'vue'
 import { REGEX_FORMAT, REGEX_PARSE } from './constant'
 import type { DateLike, DayInfo, Fn } from './shared'
 export function normalizeDate(date: DateLike) {
@@ -85,6 +86,6 @@ export function getDateInfo(date: Ref<Date>): DayInfo {
     minutes,
     milliseconds,
     seconds,
-    week
+    week,
   }
 }

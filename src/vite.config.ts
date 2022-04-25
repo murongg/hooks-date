@@ -8,9 +8,9 @@ import { MarkdownTransform } from './.vitepress/plugins/markdownTransform'
 
 export default {
   plugins: [
-     // plugins
-     MarkdownTransform(),
-     Components({
+    // plugins
+    MarkdownTransform(),
+    Components({
       dirs: resolve(__dirname, '.vitepress/theme/components'),
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: [

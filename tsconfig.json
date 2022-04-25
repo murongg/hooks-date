@@ -12,15 +12,5 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
-  },
-  "include": [
-    "src",
-    "vitest.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/**/*.md",
-    "**/dist",
-    "src/.vitepress",
-  ]
+  }
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useNow } from '.';
+import { useNow } from '.'
 
 const { now, year, seconds, month, day, hours, minutes, milliseconds, week } = useNow({ isExtend: true })
 </script>

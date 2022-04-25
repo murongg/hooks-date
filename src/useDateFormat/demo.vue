@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useDateFormat } from '.';
+import { useDateFormat } from '.'
 const formatter = ref('YYYY-MM-DD HH:mm:ss')
 const date = useDateFormat(new Date(), formatter)
 </script>

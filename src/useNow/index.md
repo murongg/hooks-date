@@ -7,15 +7,15 @@ import { useNow } from 'hooks-date'
 
 const now = useNow()
 // or
-const { 
-  now, 
-  year, 
-  seconds, 
-  month, 
-  day, 
-  hours, 
-  minutes, 
-  milliseconds, 
-  week 
+const {
+  now,
+  year,
+  seconds,
+  month,
+  day,
+  hours,
+  minutes,
+  milliseconds,
+  week,
 } = useNow({ isExtend: true })
 ```
