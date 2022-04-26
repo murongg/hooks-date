@@ -1,5 +1,5 @@
 import { ref, watch } from 'vue'
-import { cloneDeep } from 'lodash'
+import { cloneDeep } from 'lodash-es'
 import type { DateLike, MaybeRef } from '../shared'
 import { useDate } from '../useDate'
 
