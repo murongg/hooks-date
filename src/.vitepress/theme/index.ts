@@ -13,7 +13,7 @@ const theme: any = {
     VPTheme.enhanceApp?.(ctx)
 
     if (typeof window !== 'undefined')
-      handleRedirects(ctx.router)
+      handleRedirects()
   },
 }
 
