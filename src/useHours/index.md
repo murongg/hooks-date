@@ -1,9 +1,9 @@
-# useHour
-
+# useHours
+Reactive modification hour
 ## Usage
 
 ```ts
-import { useHour } from 'hooks-date'
+import { useHours } from 'hooks-date'
 
-const date = useDateFormat(new Date(), 'YYYY-MM-DD HH:mm:ss')
+const { hours, date } = useHours()
 ```

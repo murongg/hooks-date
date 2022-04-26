@@ -1,5 +1,5 @@
 # useDate
-
+Reactive date object
 ## Usage
 
 ```ts

@@ -1,5 +1,5 @@
 # useDateFormat
-
+Reactive time format
 ## Usage
 
 ```ts
