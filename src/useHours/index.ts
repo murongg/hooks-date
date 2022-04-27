@@ -5,7 +5,7 @@ import { useDate } from '../useDate'
 
 export function useHours(date?: MaybeRef<DateLike>) {
   const refDate = useDate(date)
-  const tmpDate = cloneDeep(refDate)
+  const tmpDate = cloneDeep(refDate.value)
   const hours = ref(refDate.value.getHours())
   const isSetHours = false
   watch(hours, (val: number) => {
@@ -16,7 +16,7 @@ export function useHours(date?: MaybeRef<DateLike>) {
     if (!isSetHours)
       hours.value = h
 
-    return tmpDate.value.setHours.call(this, h)
+    return tmpDate.setHours.call(this, h)
   }
 
   return {
