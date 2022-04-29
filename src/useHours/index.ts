@@ -12,7 +12,7 @@ export function useHours(date?: MaybeRef<DateLike>) {
     refDate.value.setHours(val)
   })
 
-  refDate.value.setHours = function(h: number) {
+  refDate.value.setHours = function (h: number) {
     if (!isSetHours)
       hours.value = h
 

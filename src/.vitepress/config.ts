@@ -3,7 +3,7 @@ import base from '@vue/theme/config'
 import highlight from './plugins/highlight'
 import { getFunctionNames } from './utils'
 
-const themeConfig = async() => {
+const themeConfig = async () => {
   const config = await base()
   config.markdown.highlight = await highlight()
   return config
