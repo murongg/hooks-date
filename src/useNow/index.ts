@@ -1,5 +1,5 @@
-import type { Ref } from 'vue'
-import { ref } from 'vue'
+import type { Ref } from 'vue-demi'
+import { ref } from 'vue-demi'
 import type { DayInfo } from '../shared'
 import { getDateInfo, interval as intervalFn, requestAnimationFrame } from '../utils'
 

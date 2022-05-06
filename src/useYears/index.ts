@@ -1,4 +1,4 @@
-import { ref, watch } from 'vue'
+import { ref, watch } from 'vue-demi'
 import { cloneDeep } from 'lodash-es'
 import type { DateLike, MaybeRef } from '../shared'
 import { useDate } from '../useDate'
@@ -14,7 +14,7 @@ export function useYears(date?: MaybeRef<DateLike>) {
 
   refDate.value.setFullYear = function (h: number) {
     if (!isSet)
-    years.value = h
+      years.value = h
 
     return tmpDate.setFullYear.call(this, h)
   }

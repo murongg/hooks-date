@@ -1,4 +1,4 @@
-import type { ComputedRef, Ref } from 'vue'
+import type { ComputedRef, Ref } from 'vue-demi'
 
 /**
  * Maybe it's a ref, or not.

@@ -1,5 +1,5 @@
-import type { Ref } from 'vue'
-import { ref, unref } from 'vue'
+import type { Ref } from 'vue-demi'
+import { ref, unref } from 'vue-demi'
 import type { DateLike, MaybeRef } from '../shared'
 import { normalizeDate } from '../utils'
 

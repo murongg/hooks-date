@@ -49,9 +49,18 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "lodash-es": "^4.17.21",
-    "vue": "^3.2.33"
+    "vue-demi": "^0.12.5"
   },
   "devDependencies": {
     "@babel/types": "^7.17.0",
@@ -80,6 +89,7 @@
     "unplugin-vue-components": "^0.19.3",
     "vite": "^2.9.1",
     "vitepress": "^0.22.3",
-    "vitest": "^0.9.3"
+    "vitest": "^0.9.3",
+    "vue": "^3.2.31"
   }
 }

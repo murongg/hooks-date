@@ -1,5 +1,5 @@
-import type { Ref } from 'vue'
-import { computed, onUnmounted } from 'vue'
+import type { Ref } from 'vue-demi'
+import { computed, onUnmounted } from 'vue-demi'
 import { REGEX_FORMAT, REGEX_PARSE } from './constant'
 import type { DateLike, DayInfo, Fn } from './shared'
 export function normalizeDate(date: DateLike) {

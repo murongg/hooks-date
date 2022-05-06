@@ -1,4 +1,4 @@
-import { computed, unref } from 'vue'
+import { computed, unref } from 'vue-demi'
 import { FORMAT_DEFAULT } from '../constant'
 import type { DateLike, MaybeRef } from '../shared'
 import { formatDate, normalizeDate } from '../utils'
